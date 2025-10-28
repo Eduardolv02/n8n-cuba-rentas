@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: n8n-cuba-rentas
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_PORT
+        value: "5678"
+      - key: N8N_PROTOCOL
+        value: https
